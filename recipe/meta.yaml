@@ -39,5 +39,12 @@ about:
   summary: 'pytest-repeat is a plugin for py.test that makes it easy to repeat a single test, or multiple tests, a specific number of times.'
 
 extra:
+  skip-lints:
+    - avoid_noarch    # Only if building a noarch package
+  anaconda-services:
+    recipe-maintainers:
+       - bkreider
+    comment: "From building deepeval in ticket: https://anaconda.zendesk.com/agent/tickets/53943"
+
   recipe-maintainers:
     - hmaarrfk
